@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --claude-beige: #f5f2e8;
+}
+
+/* Adicionar cor personalizada para usar com o Tailwind */
+.bg-claude-beige {
+  background-color: var(--claude-beige);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7vh; /* Para compensar o header fixo */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Ajuste entre 400 e 700 */
+  font-style: normal;
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
