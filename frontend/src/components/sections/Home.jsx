@@ -10,24 +10,24 @@ const Home = () => {
       id="home"
       className={`w-full h-screen flex items-center justify-center
       ${isDarkTheme 
-        ? 'bg-gradient-to-b from-[var(--dark-blue)] to-[var(--medium-blue)] text-[var(--avocado)]' 
+        ? 'bg-gradient-to-b from-gray-800 to-[var(--dark-blue)] text-[var(--avocado)]' 
         : 'bg-gradient-to-b from-[var(--light-green)] to-[var(--avocado)] text-[var(--dark-blue)]'}`}
     >
       <div className="jersey-25-regular max-w-[1024px] w-full mx-auto px-6 flex flex-col">
         <p className="text-4xl max-w-2xl">
-          APLICAÇÃO DESENVOLVIDA EM (ReactJS)
+          Aplicação desenvolvida em (ReactJS)
         </p>
         <p className="text-4xl max-w-2xl pt-4">
-          RODANDO EM UM SERVIDOR EC2 (AWS)
+          Rodando em um servidor EC2 (AWS)
         </p>
         <p className="text-4xl max-w-2xl pt-4">
-          DENTRO DE UM CONTAINER (DOCKER)
+          Dentro de um container (DOCKER)
         </p>
         <p className="text-4xl max-w-2xl pt-4">
-          OBSERVADA POR (PROMETHEUS)
+          Observada por (PROMETHEUS)
         </p>
         <p className="text-4xl max-w-2xl pt-4">
-          TRADUZIDA EM GRAFICOS POR (GRAFANA)
+          Traduzido em gráficos por (GRAFANA)
         </p>
       </div>
     </section>

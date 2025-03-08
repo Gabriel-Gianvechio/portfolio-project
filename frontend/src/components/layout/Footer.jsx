@@ -9,15 +9,16 @@ const Footer = () => {
   return (
     <footer 
       className={`h-[9vh] w-full max-w-[1024px] mx-auto px-6
-      flex items-center justify-between rounded-t-lg border-t border-l border-r
+      flex items-center justify-between rounded-t-2xl
       jersey-25-regular
+      bg-gray-500 bg-opacity-10 backdrop-blur-md
       ${isDarkTheme 
-        ? 'bg-[var(--dark-blue)] bg-opacity-50 border-[var(--medium-blue)] text-[var(--avocado)]' 
-        : 'bg-[var(--light-green)] bg-opacity-50 border-[var(--light-blue)] text-[var(--dark-blue)]'
+        ? 'text-gray-200' 
+        : 'text-gray-700'
       }`}
     >
       {/* Crédito à esquerda */}
-      <div className="text-lg font-medium">
+      <div className="text-xl font-medium">
         Desenvolvido por Deviel
       </div>
 
