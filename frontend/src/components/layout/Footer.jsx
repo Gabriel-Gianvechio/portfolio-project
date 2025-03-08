@@ -1,3 +1,4 @@
+// Footer.js
 import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import { Linkedin, Github } from 'lucide-react';
@@ -9,9 +10,10 @@ const Footer = () => {
     <footer 
       className={`h-[9vh] w-full max-w-[1024px] mx-auto px-6
       flex items-center justify-between rounded-t-lg border-t border-l border-r
+      jersey-25-regular
       ${isDarkTheme 
-        ? 'bg-black bg-opacity-50 border-gray-700 text-white' 
-        : 'bg-white bg-opacity-50 border-gray-200 text-gray-800'
+        ? 'bg-[var(--dark-blue)] bg-opacity-50 border-[var(--medium-blue)] text-[var(--avocado)]' 
+        : 'bg-[var(--light-green)] bg-opacity-50 border-[var(--light-blue)] text-[var(--dark-blue)]'
       }`}
     >
       {/* Crédito à esquerda */}

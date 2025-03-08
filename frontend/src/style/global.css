@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --claude-beige: #f5f2e8;
+  --dark-blue: #090a24;
+  --medium-blue: #294380;
+  --light-blue: #69d2cd;
+  --light-green: #b9f1d6;
+  --avocado: #f1f6ce;
 }
 
 /* Adicionar cor personalizada para usar com o Tailwind */
@@ -21,6 +25,8 @@ body {
   padding: 0;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  font-family: 'Jersey 25', sans-serif;
+
 }
 
 .pixelify-sans {
@@ -35,4 +41,3 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-

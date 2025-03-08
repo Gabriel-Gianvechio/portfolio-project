@@ -1,3 +1,4 @@
+// About.js
 import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
 
@@ -8,9 +9,9 @@ const About = () => {
     <section 
       id="about"
       className={`w-full h-screen flex items-center justify-center
-      ${isDarkTheme 
-        ? 'bg-gradient-to-b from-gray-800 to-gray-900 text-white' 
-        : 'bg-gradient-to-b from-white to-claude-beige text-black'}`}
+        ${isDarkTheme 
+          ? 'bg-gradient-to-b from-[var(--medium-blue)] to-[var(--dark-blue)] text-[var(--avocado)]' 
+          : 'bg-gradient-to-b from-[var(--light-green)] to-[var(--avocado)] text-[var(--dark-blue)]'}`}
     >
       <div className="max-w-[1024px] w-full mx-auto px-6 flex flex-col items-center justify-center">
         <h2 className="text-4xl font-bold mb-6">Sobre</h2>
