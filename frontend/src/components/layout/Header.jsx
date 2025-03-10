@@ -9,7 +9,7 @@ const Header = ({ activeSection, onNavigate }) => {
     <header 
       className={`h-[7vh] w-full max-w-[1024px] mx-auto px-6 fixed top-0 left-0 right-0 z-50
       flex items-center justify-between rounded-b-md
-      bg-gray-400 bg-opacity-10 backdrop-blur-md
+      bg-red-400 bg-opacity-20 backdrop-blur-md
       ${isDarkTheme 
         ? 'text-gray-400 border border-gray-800' 
         : 'text-gray-500 border border-gray-300'}`}

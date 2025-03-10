@@ -30,7 +30,7 @@ const Home = () => {
         
         {/* Card de apresentação */}
         <div className="w-full rounded-xl p-6
-          bg-gray-400 bg-opacity-10 backdrop-blur-md
+          bg-red-400 bg-opacity-20 backdrop-blur-md
           border border-gray-300 dark:border-gray-800">
           
           {/* Subtítulo */}
@@ -40,10 +40,11 @@ const Home = () => {
           
           {/* Conteúdo com palavras-chave destacadas e tamanho de fonte reduzido */}
           <p className={`${isDarkTheme ? 'text-gray-300' : 'text-gray-500'} text-lg mt-5 mb-8`}>
-            Te ajudo a migrar seu servidor para 
-            <span className={isDarkTheme ? 'text-yellow-200' : 'text-red-400'}> Cloud</span>, implementar 
-            <span className={isDarkTheme ? 'text-yellow-200' : 'text-red-400'}> Pipelines CI/CD</span> e 
-            <span className={isDarkTheme ? 'text-yellow-200' : 'text-red-400'}> observabilidade</span> em suas aplicações.
+            Transformo sua infraestrutura com soluções 
+            <span className={isDarkTheme ? 'text-yellow-200' : 'text-red-400'}> Cloud AWS</span>, automatizo entregas com 
+            <span className={isDarkTheme ? 'text-yellow-200' : 'text-red-400'}> Pipelines CI/CD</span> robustos e implanto sistemas de
+            <span className={isDarkTheme ? 'text-yellow-200' : 'text-red-400'}> monitoramento </span>
+            que garantem a performance e disponibilidade das suas aplicações. <span className='italic'>Reduza custos, aumente a segurança e escale seus serviços com eficiência.</span>
           </p>
           
           {/* Logos das tecnologias */}
