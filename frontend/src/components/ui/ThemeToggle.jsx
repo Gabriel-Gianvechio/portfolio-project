@@ -1,20 +1,20 @@
 import React from 'react';
-import { Moon, Sun } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
+import { Sun, Moon } from 'lucide-react';
 
 const ThemeToggle = () => {
   const { isDarkTheme, toggleTheme } = useTheme();
 
   return (
-    <button 
-      onClick={toggleTheme} 
-      className="p-2 rounded-full hover:bg-gray-200 transition-colors"
-      aria-label={isDarkTheme ? "Switch to light theme" : "Switch to dark theme"}
+    <button
+      onClick={toggleTheme}
+      className="transition-transform hover:scale-105 p-1"
+      aria-label={isDarkTheme ? "Alternar para modo claro" : "Alternar para modo escuro"}
     >
       {isDarkTheme ? (
-        <Sun size={36} className="text-white" />
+        <Sun size={28} className="text-gray-100" />
       ) : (
-        <Moon size={36} className="text-gray-800" />
+        <Moon size={28} className="text-gray-900" />
       )}
     </button>
   );

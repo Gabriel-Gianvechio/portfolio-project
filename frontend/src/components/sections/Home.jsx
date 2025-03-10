@@ -1,34 +1,63 @@
-// Home.js
 import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
+import { Cloud, Server, Code, Database, BarChart, Terminal, LineChart } from 'lucide-react';
 
 const Home = () => {
   const { isDarkTheme } = useTheme();
 
+  // Configurando os ícones para representar as ferramentas até que sejam substituídos pelas logos reais
+  const techIcons = [
+    { name: 'Docker', icon: <Cloud size={36} /> },
+    { name: 'Kubernetes', icon: <Server size={36} /> },
+    { name: 'Jenkins', icon: <Code size={36} /> },
+    { name: 'AWS', icon: <Database size={36} /> },
+    { name: 'Grafana', icon: <BarChart size={36} /> },
+    { name: 'Terraform', icon: <Terminal size={36} /> },
+    { name: 'Prometheus', icon: <LineChart size={36} /> }
+  ];
+
   return (
     <section 
       id="home"
-      className={`w-full h-screen flex items-center justify-center
+      className={`w-full h-screen flex items-start justify-center pt-24
       ${isDarkTheme 
-        ? 'bg-gradient-to-b from-gray-800 to-[var(--dark-blue)] text-[var(--avocado)]' 
-        : 'bg-gradient-to-b from-[var(--light-green)] to-[var(--avocado)] text-[var(--dark-blue)]'}`}
+        ? 'bg-gradient-to-b from-black to-gray-900' 
+        : 'bg-gradient-to-b from-white to-gray-200'}`}
     >
-      <div className="jersey-25-regular max-w-[1024px] w-full mx-auto px-6 flex flex-col">
-        <p className="text-4xl max-w-2xl">
-          Aplicação desenvolvida em (ReactJS)
-        </p>
-        <p className="text-4xl max-w-2xl pt-4">
-          Rodando em um servidor EC2 (AWS)
-        </p>
-        <p className="text-4xl max-w-2xl pt-4">
-          Dentro de um container (DOCKER)
-        </p>
-        <p className="text-4xl max-w-2xl pt-4">
-          Observada por (PROMETHEUS)
-        </p>
-        <p className="text-4xl max-w-2xl pt-4">
-          Traduzido em gráficos por (GRAFANA)
-        </p>
+      <div className="max-w-[1024px] w-full mx-auto px-6 flex flex-col">
+        {/* Título principal com tamanho maior e margem top adicional */}
+        <h1 className={`${isDarkTheme ? 'text-white' : 'text-black'} text-6xl font-bold mb-8 mt-10`}>Gabriel Gianvechio</h1>
+        
+        {/* Card de apresentação */}
+        <div className="w-full rounded-xl p-6
+          bg-gray-400 bg-opacity-10 backdrop-blur-md
+          border border-gray-300 dark:border-gray-800">
+          
+          {/* Subtítulo */}
+          <h2 className={`${isDarkTheme ? 'text-white' : 'text-black'} text-2xl font-semibold mb-4`}>
+            Especialista em Cloud AWS e DevOps
+          </h2>
+          
+          {/* Conteúdo com palavras-chave destacadas e tamanho de fonte reduzido */}
+          <p className={`${isDarkTheme ? 'text-gray-300' : 'text-gray-500'} text-lg mt-5 mb-8`}>
+            Te ajudo a migrar seu servidor para 
+            <span className={isDarkTheme ? 'text-yellow-200' : 'text-red-400'}> Cloud</span>, implementar 
+            <span className={isDarkTheme ? 'text-yellow-200' : 'text-red-400'}> Pipelines CI/CD</span> e 
+            <span className={isDarkTheme ? 'text-yellow-200' : 'text-red-400'}> observabilidade</span> em suas aplicações.
+          </p>
+          
+          {/* Logos das tecnologias */}
+          <div className="flex justify-between items-center flex-wrap">
+            {techIcons.map((tech, index) => (
+              <div key={index} className="flex flex-col items-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center mb-2 text-white">
+                  {tech.icon}
+                </div>
+                <span className="text-sm text-gray-600 dark:text-gray-300">{tech.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

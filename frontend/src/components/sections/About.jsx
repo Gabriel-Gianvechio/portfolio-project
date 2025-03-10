@@ -10,8 +10,8 @@ const About = () => {
       id="about"
       className={`w-full h-screen flex items-center justify-center
         ${isDarkTheme 
-          ? 'bg-gradient-to-b from-[var(--dark-blue)] to-gray-800 text-[var(--avocado)]' 
-          : 'bg-gradient-to-b from-[var(--avocado)] to-[var(--light-green)] text-[var(--dark-blue)]'}`}
+          ? 'bg-gradient-to-b from-gray-900 to-black' 
+          : 'bg-gradient-to-b from-gray-200 to-white'}`}
     >
       <div className="max-w-[1024px] w-full mx-auto px-6 flex flex-col items-center justify-center">
         <h2 className="text-4xl font-bold mb-6">Sobre</h2>

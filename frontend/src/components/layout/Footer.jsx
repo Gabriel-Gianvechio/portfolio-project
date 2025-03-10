@@ -8,9 +8,8 @@ const Footer = () => {
 
   return (
     <footer 
-      className={`h-[9vh] w-full max-w-[1024px] mx-auto px-6
-      flex items-center justify-between rounded-t-2xl
-      jersey-25-regular
+      className={`h-[7vh] w-full max-w-[1024px] mx-auto px-6
+      flex items-center justify-between rounded-t-md
       bg-gray-500 bg-opacity-10 backdrop-blur-md
       ${isDarkTheme 
         ? 'text-gray-200' 
@@ -18,7 +17,7 @@ const Footer = () => {
       }`}
     >
       {/* Crédito à esquerda */}
-      <div className="text-xl font-medium">
+      <div className="text-md font-medium">
         Desenvolvido por Deviel
       </div>
 

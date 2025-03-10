@@ -29,8 +29,8 @@ const Projects = () => {
       id="projects"
       className={`w-full h-screen flex items-center justify-center
         ${isDarkTheme 
-          ? 'bg-gradient-to-b from-gray-800 to-[var(--dark-blue)] text-[var(--avocado)]' 
-          : 'bg-gradient-to-b from-[var(--light-green)] to-[var(--avocado)] text-[var(--dark-blue)]'}`}
+          ? 'bg-gradient-to-b from-black to-gray-900' 
+          : 'bg-gradient-to-b from-white to-gray-200'}`}
     >
       <div className="max-w-[1024px] w-full mx-auto px-6 flex flex-col items-center justify-center">
         <h2 className="text-4xl font-bold mb-8">Projetos</h2>
